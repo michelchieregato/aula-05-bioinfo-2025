@@ -1,25 +1,36 @@
 """
-#### Exercício 2 - Filtrando uma lista.
+#### Exercício 2 - Variantes Raras
 
-Receba uma lista de input do usuário.
+Dado uma lista de dicionários, com ids de variantes e sua frequencia na população,
+imprima apenas o nome das variantes com frequecia menor que 1% (0.01).
 
-Ele digitará como um texto com os números separados por vígula. Para isso, pode-se utilizar o código disponibilizado que
-vai transformar esse texto em lista para você.
+Exemplo:
 
-Depois imprima uma lista apenas com os números ímpares.
+Entrada:
 
-Dica: Crie outra lista e popule ela, a partir da varredura da lista original.
+variantes = {
+    {"id": "rs123", "frequencia": 0.008},
+    {"id": "rs456", "frequencia": 0.015},
+    {"id": "rs789", "frequencia": 0.007},
+}
 
-Exemplos:
+Saída:
 
-----------------------------------
-
-Digite a sua lista (separando os números por vírgula): 1, 2, 3, 4, 5
-Resposta:
-Os números ímpares são [1, 3, 5]
+As variantes raras são:
+rs123
+rs789
 """
 
-# Código para pegar a lista
-lista = [*map(int, input("Digite a sua lista (separando os números por vírgula): ").split(","))]
+# Variantes fornecidas
+variantes = {
+    {"id": "rs789", "frequencia": 0.07},
+    {"id": "rs101112", "frequencia": 0.03},
+    {"id": "rs131415", "frequencia": 0.0005},
+    {"id": "rs161718", "frequencia": 0.05},
+    {"id": "rs192021", "frequencia": 0.09},
+    {"id": "rs222324", "frequencia": 0.012},
+    {"id": "rs252627", "frequencia": 0.0001},
+    {"id": "rs282930", "frequencia": 0.06},
+}
 
 # Fazer a partir daqui...

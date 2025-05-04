@@ -1,27 +1,58 @@
 """
-#### Exercício 1
+#### Exercício 1 - Buscando Informações de Genes
 
-Receba um número e calcule o fatorial dele.
+Você tem um dicionário onde:
 
-Obs: O fatorial de um número é calculado pela seguinte fórmula "n! = n · (n-1) · (n-2) … 3 · 2 · 1". Ou seja, por exemplo:
+A chave é o nome do gene.
 
-4! = 4 * 3 * 2 * 1 = 24.
+O valor é o tamanho do gene (em pares de base).
+
+Tarefa:
+
+Peça para o usuário digitar o nome de um gene.
+
+Depois, procure no dicionário:
+
+Se o gene existir, imprima: "O tamanho do gene [NOME] é [TAMANHO] pb."
+
+Se não existir, imprima: "Gene não encontrado."
+
+------------
 
 Exemplo:
 
-Digite um número:
-4
+Entrada:
 
-O fatorial de 4 é 24.
---------
-Digite um número:
-5
+Digite o nome do gene: BRCA1
 
-O fatorial de 5 é 120.
+Saída:
 
-Dica: Para ajudar nesse cálculo, lembre-se das estruturas de repetição. 
+O tamanho do gene BRCA1 é [TAMANHO] pb."
 
-Pode-se utilizar o comando "while" ou até o "for" para te ajudar nisso.
+------------
 
-Fonte: Curso em vídeo.
+Exemplo:
+
+Entrada:
+
+Digite o nome do gene: BRCA3
+
+Saída:
+
+Gene não encontrado.
 """
+
+genes = {
+    "BRCA1": 81188,
+    "TP53": 19054,
+    "EGFR": 192612,
+    "APOE": 3597,
+    "CFTR": 250000,
+    "HBB": 1606,
+    "F8": 186000,
+    "DMD": 2400000,
+    "HTT": 169451,
+    "FMR1": 38000,
+}
+
+# Criar seu código a partir daqui
